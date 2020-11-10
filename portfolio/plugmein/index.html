@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>William Loftus | PlugMeIn</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../css/album.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/colors.css" rel="stylesheet">
+    <link href="../css/modal.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <header>
+      <div class="collapse bg-charlie" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-white">
+                My name is William Loftus and I am a young, ambitious, computing professional in my last semester of school at BCIT. 
+                I'm in the Computer Systems Technology program and will be graduating with a diploma at the end of December.
+                I look forward to bringing my technical skills and passion for programming to the computing industry!
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.github.com/wloftus" target="_blank" class="text-white">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/wloftus/" target="_blank" class="text-white">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-charlie shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="../" class="navbar-brand d-flex align-items-center">
+            <strong>My Portfolio</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      
+      <div class="container" id="header">
+        <h2>PlugMeIn Android Application</h2>
+        <hr/>
+      </div>
+
+      <div class="container">
+        <h4>Project Description</h4>
+        <p>
+          PlugMeIn is an Android Application designed to help electric 
+          car owners locate and review chargers around Vancouver. My team 
+          found that using Google Maps to locate electric chargers could 
+          be overwhelming to the user with the amount of information 
+          presented. Because of this we decided to create an App 
+          specifically for this purpose.
+        </p>
+        <p>
+          In a team of 4, I worked with my classmates to design this App 
+          using technologies such as Java, Android Studio, 
+          <a href="https://firebase.google.com/" target="_blank">Firebase</a> 
+          (NOSQL Database), and Google's    
+          <a href="https://developers.google.com/maps/documentation/android-sdk/overview" target="_blank">Maps</a> 
+          and
+          <a href="https://developers.google.com/maps/documentation/streetview/overview" target="_blank">Static Street View</a>
+          APIs. This App utilized Vancouver's  
+          <a href="https://opendata.vancouver.ca/pages/home/" target="_blank">Open Data API</a> 
+          to retrieve information on electric car chargers. I had a lot of fun working on this project. 
+          It was my first time creating a Mobile App with Android Studio, which was exciting. I also 
+          found working with the Google APIs very cool and was amazed at what we could do with them.
+        </p>
+      </div>
+     
+      <div class="container">
+        <h4>What I Did</h4>
+        <p>Some of my technical work included:</p>
+        <ul>
+          <li>Designing User Stories and User Flow diagrams</li>
+          <li>Creating wireframes using Figma and implementing them into the App's frontend</li>
+          <li>Performing GET requests to the Vancouver Open Data API and parsing the JSON response</li>
+          <li>Researching and integrating Google's Maps and Static Street View API into the App</li>
+          <li>Using the Open Data API JSON response to create Charger objects and displaying them on the map</li>
+        </ul> 
+        <p>Some of my non-technical work included:</p>
+        <ul>
+          <li>Maintaining a Trello Board to keep track of tasks for the team</li>
+          <li>Problem solving collaboratively with my team to troubleshoot bugs</li>
+          <li>Working independently and explaining what I accomplished or what problems I ran into during team meetings</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h4>Pictures</h4>
+        <h5>Wireframes</h5>
+        <p>
+          These are the four Wireframes I created for our App using Figma. I wanted the interface to feel familiar and intuitive for 
+          users so I followed popular designs. These Wireframes would be later implemented into the App's frontend by myself.
+        </p>
+        <img src="./imgs/wireframes.png" width="40%" height="40%" class="img-fluid modal-img" alt="Figma Wireframes">
+        <br/><br/>
+        <h5>Sign In Page</h5>
+        <p>
+          This the Application's Sign-in page. Users are taken here when they start the App. We used Firebase's authentication 
+          services to allow users to log in with Google, their email, or their phone.
+        </p>
+        <img src="./imgs/signin.JPG" width="40%" height="40%" class="img-fluid modal-img" alt="Sign In Page">
+        <br/><br/>        
+        <h5>Charger Details Page</h5>
+        <p>
+          This is the page you are taken to after selecting a charger from the map. The charger information is passed to this page
+          in the form of an object and the relevant information is filled in on the screen. The picture you see is obtained using 
+          Google's Static Street View API. We can query the API with the Charger's exact coordinates and it will return the closest
+          Street View image. I thought this would be a useful way for the Users to visualize the Charger's location without us having to 
+          manually build up a database of Charger pictures.
+        </p>
+        <img src="./imgs/details.JPG" width="40%" height="40%" class="img-fluid modal-img" alt="Charger Details Page">
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+          <br/>
+          <a href="../">Back to main</a>
+        </p>
+        <h4>Links</h4>
+        <p><a href="https://www.github.com/wloftus" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/wloftus/" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
