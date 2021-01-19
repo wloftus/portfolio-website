@@ -101,7 +101,7 @@
           features. We developed following Agile and used a Scrum Board. 
           During the project I got to use and become proficient in technologies 
           such as React, Node.js Express, and PostgreSQL. My role in the 
-          was a Full Stack Developer and I really enjoyed being able to 
+          was as the team lead and Full Stack Developer, I really enjoyed being able to 
           work with and master all aspects of the Web App. Since our client 
           gave us a lot of freedom in terms of our implementation, I found 
           it really exciting to take their requirements and develop our 
@@ -113,48 +113,62 @@
         <h4>What I Did</h4>
         <p>Some of my technical work included:</p>
         <ul>
-          <li>Using Docker to create containerized development, staging, and production environments</li>
-          <li>Working with asynchronous functions and Promises in TypeScript</li>
-          <li>Designing the GraphQL Schema and Query Resolver Function</li>
-          <li>Creating a Provider using TypeScript, to retrieve Suggestion data from Strapi and map it to a Suggestion object</li>
-          <li>Creating automated unit tests using <a href="https://jestjs.io/" target="_blank">Jest</a></li>
+          <li>Create advanced React components to be used in other components for our Body Map Diagram page.</li>
+          <li>Style the React components with <a href="https://material-ui.com/" target="_blank">Material-UI</a>, a React UI Framework, to ensure a user-friendly and responsive Web App.</li>
+          <li>Designing database tables for optimal normalization as well as creating seeding scripts.</li>
+          <li>Creating routes in Node.js Express for retrieving and sending information to the database.</li>
+          <li>Debugging the existing codebase to ensure a high-quality, bug-free final product for our client.</li>
         </ul> 
         <p>Some of my non-technical work included:</p>
         <ul>
-          <li>Participating in daily scrums with my teammates and weekly meetings with the client</li>
-          <li>Demo'ing our weekly deliverables to the client</li>
-          <li>Leading code reviews with my teammates</li>
-          <li>Presenting the finished project to our classmates and other industry clients</li>
+          <li>Leading team meetings and demonstrations with our client.</li>
+          <li>Extensive documentation on project installation and use.</li>
+          <li>Creating and assigning tasks for myself and the team.</li>
+          <li>Communicated issues with our client via email.</li>
         </ul>
       </div>
 
       <div class="container">
-        <h4>Code Samples</h4>
-        <h5>Jest Unit Tests</h5>
+        <h4>Screenshots and Code Samples</h4>
+        <h5>Body Map Page</h5>
         <p>
-          Below is an example of some of the Jest Unit Tests I wrote. These tested the <code>filter()</code> and 
-          <code>limitSuggestions()</code> functions to make sure they would return the proper suggestions. This was important because we 
-          did not want to change these functions defined behaviour as we were refactoring them.
+          Below is the Body Map page I created for our project. It is implemented using two high-quality diagrams with a Image Map layered
+          on top. I used a package called <a href="https://www.npmjs.com/package/react-image-mapper" target="_blank">react-image-mapper</a> 
+          to implement the Image Map in React. The resulting diagram is fully responsive and split into 112 different sections.
         </p>
-        <img src="./imgs/jest_tests.JPG" width="50%" height="50%" class="img-fluid modal-img" alt="Jest Code Snippet">
+        <p>
+          Each section highlights red when it is hovered on and will open a modal when clicked. The modal is loaded with information from whichever section is 
+          clicked. On this modal you can add identifying features accompanied by a photo from your webcam or computer. You can also view and delete 
+          features you've already added.
+        </p>
+        <img src="./imgs/bodymap.png" width="45%" height="45%" class="img-fluid modal-img" alt="Body Map Page">
+        <img src="./imgs/bodymap_modal.png" width="45%" height="45%" class="img-fluid modal-img" alt="Body Map Page Modal">
         <br/><br/>
-        <h5>GraphQL Query Resolver</h5>
+        <h5>Body Map Page React Code</h5>
         <p>
-          This is the GraphQL Query Resolver I coded. These GraphQL queries are the end-point between our API and the client's Web 
-          Application so they were very important to our project. I designed them based on the Client's requirements and the use cases 
-          provided to us. The first query, <code>suggestions()</code>, will retrieve multiple suggestions and filter them based on the 
-          parameters provided. The second query, <code>suggestion()</code>, only retrieves a single suggestion by its ID.
+          This is a snippet of the React Component for the Body Map page. Here you can see the two Image Maps imported from the <a href="https://www.npmjs.com/package/react-image-mapper" target="_blank">react-image-mapper</a> 
+          package, filled with custom attributes to work with our images. I also use custom components from <a href="https://material-ui.com/" target="_blank">Material-UI</a> to make 
+          sure the page is responsive and clean looking. Finally, at the top, there is the BodyMapModal component I created that will be opened and passed relevant information when any section on the 
+          diagram is clicked.
         </p>
-        <img src="./imgs/resolver.JPG" width="60%" height="60%" class="img-fluid modal-img" alt="GraphQL Query Resolver">
+        <img src="./imgs/react_comp.png" width="50%" height="50%" class="img-fluid modal-img" alt="React Component Snippet">
         <br/><br/>        
-        <h5>Suggestions Provider</h5>
+        <h5>Express Route</h5>
         <p>
-          The JSONSuggestionsProvider is where our API communicates with Strapi to retrieve suggestions. When the Provider is initialized, 
-          it takes advantage of Node.js's <code>process.env.NODE_ENV</code> to determine which Strapi environment to connect to. The 
-          <code>getSuggestions()</code> function sends a GET request to Strapi and then calls the <code>handleResponse()</code> function 
-          to map the response to a Suggestion object.
+          This Express Route, called <code>body_features.js</code>, is what we reference in our React Components when we want to Read, Create, or Delete any 
+          identifying features. I used <a href="http://knexjs.org/" target="_blank">Knex.js</a>, a SQL query builder, to communicate with our database. 
+          Using Express Routing creates a nice interface for me to use in React as well as providing code reuse.
         </p>
-        <img src="./imgs/provider.JPG" width="60%" height="60%" class="img-fluid modal-img" alt="Suggestions Provider">
+        <img src="./imgs/express_route1.png" width="45%" height="45%" class="img-fluid modal-img" alt="Express Route Snippet Part 1">
+        <img src="./imgs/express_route2.png" width="45%" height="45%" class="img-fluid modal-img" alt="Express Route Snippet Part 2">
+        <br/><br/>        
+        <h5>Database Script</h5>
+        <p>
+          This is an example of one of the database scripts I used for creating the <code>body_features</code> table. The script is re-runnable and won't 
+          break if the table already exists. When writing the script, I first wrote it in SQL to better visualize what I wanted. I left the SQL version of the script 
+          as a comment, in case future developers have trouble reading the JavaScript. This script also uses <a href="http://knexjs.org/" target="_blank">Knex.js</a>.
+        </p>
+        <img src="./imgs/create_script.png" width="50%" height="50%" class="img-fluid modal-img" alt="Database Create Script">
       </div>
 
     </main>
