@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>William Loftus | FGI Web App</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../css/album.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/colors.css" rel="stylesheet">
+    <link href="../css/modal.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <header>
+      <div class="collapse bg-charlie" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-white">
+                My name is William Loftus and I am a young, ambitious, computing professional currently seeking work.
+                As a graduate of BCIT's Computer Systems Technology program, I look forward to bringing my skills and 
+                passion for programming to the computing industry! 
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.github.com/wloftus" target="_blank" class="text-white">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/wloftus/" target="_blank" class="text-white">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-charlie shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="../" class="navbar-brand d-flex align-items-center">
+            <strong>My Portfolio</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      
+      <div class="container" id="header">
+        <h2>Forensic Guardians International Web Application</h2>
+        <hr/>
+      </div>
+
+      <div class="container">
+        <h4>Project Description</h4>
+        <p>
+          Forensic Guardians International is a company that provides 
+          a biological profiling service. This service, implemented, 
+          through the Web App, collects, encrypts, and stores any of 
+          the client's <strong>identifying features</strong>. These 
+          could be pictures of the client's tattoos, birthmarks, scars, 
+          and so on. These features can then be used to identify clients 
+          in the case of an emergency.
+        </p>
+        <p>
+          I worked in a team of 4 for our industry client, Forensic 
+          Guardians International, to design a intuitive UI and backend 
+          for storing pictures and meta-data of customer's identifying 
+          features. We developed following Agile and used a Scrum Board. 
+          During the project I got to use and become proficient in technologies 
+          such as React, Node.js Express, and PostgreSQL. My role in the 
+          was a Full Stack Developer and I really enjoyed being able to 
+          work with and master all aspects of the Web App. Since our client 
+          gave us a lot of freedom in terms of our implementation, I found 
+          it really exciting to take their requirements and develop our 
+          own solutions to them.
+        </p>
+      </div>
+     
+      <div class="container">
+        <h4>What I Did</h4>
+        <p>Some of my technical work included:</p>
+        <ul>
+          <li>Using Docker to create containerized development, staging, and production environments</li>
+          <li>Working with asynchronous functions and Promises in TypeScript</li>
+          <li>Designing the GraphQL Schema and Query Resolver Function</li>
+          <li>Creating a Provider using TypeScript, to retrieve Suggestion data from Strapi and map it to a Suggestion object</li>
+          <li>Creating automated unit tests using <a href="https://jestjs.io/" target="_blank">Jest</a></li>
+        </ul> 
+        <p>Some of my non-technical work included:</p>
+        <ul>
+          <li>Participating in daily scrums with my teammates and weekly meetings with the client</li>
+          <li>Demo'ing our weekly deliverables to the client</li>
+          <li>Leading code reviews with my teammates</li>
+          <li>Presenting the finished project to our classmates and other industry clients</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h4>Code Samples</h4>
+        <h5>Jest Unit Tests</h5>
+        <p>
+          Below is an example of some of the Jest Unit Tests I wrote. These tested the <code>filter()</code> and 
+          <code>limitSuggestions()</code> functions to make sure they would return the proper suggestions. This was important because we 
+          did not want to change these functions defined behaviour as we were refactoring them.
+        </p>
+        <img src="./imgs/jest_tests.JPG" width="50%" height="50%" class="img-fluid modal-img" alt="Jest Code Snippet">
+        <br/><br/>
+        <h5>GraphQL Query Resolver</h5>
+        <p>
+          This is the GraphQL Query Resolver I coded. These GraphQL queries are the end-point between our API and the client's Web 
+          Application so they were very important to our project. I designed them based on the Client's requirements and the use cases 
+          provided to us. The first query, <code>suggestions()</code>, will retrieve multiple suggestions and filter them based on the 
+          parameters provided. The second query, <code>suggestion()</code>, only retrieves a single suggestion by its ID.
+        </p>
+        <img src="./imgs/resolver.JPG" width="60%" height="60%" class="img-fluid modal-img" alt="GraphQL Query Resolver">
+        <br/><br/>        
+        <h5>Suggestions Provider</h5>
+        <p>
+          The JSONSuggestionsProvider is where our API communicates with Strapi to retrieve suggestions. When the Provider is initialized, 
+          it takes advantage of Node.js's <code>process.env.NODE_ENV</code> to determine which Strapi environment to connect to. The 
+          <code>getSuggestions()</code> function sends a GET request to Strapi and then calls the <code>handleResponse()</code> function 
+          to map the response to a Suggestion object.
+        </p>
+        <img src="./imgs/provider.JPG" width="60%" height="60%" class="img-fluid modal-img" alt="Suggestions Provider">
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+          <br/>
+          <a href="../">Back to main</a>
+        </p>
+        <h4>Links</h4>
+        <p><a href="https://www.github.com/wloftus" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/wloftus/" target="_blank">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
