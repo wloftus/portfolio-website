@@ -87,21 +87,21 @@
         <h4>Project Description</h4>
         <p>
           Forensic Guardians International is a company that provides 
-          a biological profiling service. This service, implemented, 
-          through the Web App, collects, encrypts, and stores any of 
-          the client's <strong>identifying features</strong>. These 
+          a biological profiling service. This service, implemented 
+          through a Web Application, collects, encrypts, and stores any 
+          <strong>identifying features</strong> of a client. These 
           could be pictures of the client's tattoos, birthmarks, scars, 
-          and so on. These features can then be used to identify clients 
+          and so on. These features can then be used to identify people 
           in the case of an emergency.
         </p>
         <p>
           I worked in a team of 4 for our industry client, Forensic 
-          Guardians International, to design a intuitive UI and backend 
+          Guardians International, to design an intuitive UI and backend 
           for storing pictures and meta-data of customer's identifying 
           features. We developed following Agile and used a Scrum Board. 
-          During the project I got to use and become proficient in technologies 
-          such as React, Node.js Express, and PostgreSQL. My role in the 
-          was as the team lead and Full Stack Developer, I really enjoyed being able to 
+          During this project I got to use and become proficient in technologies 
+          such as React, Node.js Express, and PostgreSQL. My role in the group
+          was the team lead (by democratic vote) and Full Stack Developer. I really enjoyed being able to 
           work with and master all aspects of the Web App. Since our client 
           gave us a lot of freedom in terms of our implementation, I found 
           it really exciting to take their requirements and develop our 
@@ -113,8 +113,8 @@
         <h4>What I Did</h4>
         <p>Some of my technical work included:</p>
         <ul>
-          <li>Create advanced React components to be used in other components for our Body Map Diagram page.</li>
-          <li>Style the React components with <a href="https://material-ui.com/" target="_blank">Material-UI</a>, a React UI Framework, to ensure a user-friendly and responsive Web App.</li>
+          <li>Creating advanced React components to be used in our Body Map Diagram page.</li>
+          <li>Styling the React components with <a href="https://material-ui.com/" target="_blank">Material-UI</a>, a React UI Framework, to ensure a user-friendly and responsive Web App.</li>
           <li>Designing database tables for optimal normalization as well as creating seeding scripts.</li>
           <li>Creating routes in Node.js Express for retrieving and sending information to the database.</li>
           <li>Debugging the existing codebase to ensure a high-quality, bug-free final product for our client.</li>
@@ -124,7 +124,7 @@
           <li>Leading team meetings and demonstrations with our client.</li>
           <li>Extensive documentation on project installation and use.</li>
           <li>Creating and assigning tasks for myself and the team.</li>
-          <li>Communicated issues with our client via email.</li>
+          <li>Communicating issues with our client via email.</li>
         </ul>
       </div>
 
@@ -132,7 +132,7 @@
         <h4>Screenshots and Code Samples</h4>
         <h5>Body Map Page</h5>
         <p>
-          Below is the Body Map page I created for our project. It is implemented using two high-quality diagrams with a Image Map layered
+          Below is the Body Map page I created for our project. It is implemented using two high-quality diagrams with Image Maps layered
           on top. I used a package called <a href="https://www.npmjs.com/package/react-image-mapper" target="_blank">react-image-mapper</a> 
           to implement the Image Map in React. The resulting diagram is fully responsive and split into 112 different sections.
         </p>
@@ -146,8 +146,8 @@
         <br/><br/>
         <h5>Body Map Page React Code</h5>
         <p>
-          This is a snippet of the React Component for the Body Map page. Here you can see the two Image Maps imported from the <a href="https://www.npmjs.com/package/react-image-mapper" target="_blank">react-image-mapper</a> 
-          package, filled with custom attributes to work with our images. I also use custom components from <a href="https://material-ui.com/" target="_blank">Material-UI</a> to make 
+          This is a snippet of the React Component for the Body Map page I created. Here you can see the two Image Maps imported from the <a href="https://www.npmjs.com/package/react-image-mapper" target="_blank">react-image-mapper</a> 
+          package, filled with custom attributes to work with our images. I also used custom components from <a href="https://material-ui.com/" target="_blank">Material-UI</a> to make 
           sure the page is responsive and clean looking. Finally, at the top, there is the BodyMapModal component I created that will be opened and passed relevant information when any section on the 
           diagram is clicked.
         </p>
@@ -155,16 +155,16 @@
         <br/><br/>        
         <h5>Express Route</h5>
         <p>
-          This Express Route, called <code>body_features.js</code>, is what we reference in our React Components when we want to Read, Create, or Delete any 
+          I designed this Express Route, called <code>body_features.js</code>, and referenced it in React Components when I wanted to Read, Create, or Delete any 
           identifying features. I used <a href="http://knexjs.org/" target="_blank">Knex.js</a>, a SQL query builder, to communicate with our database. 
-          Using Express Routing creates a nice interface for me to use in React as well as providing code reuse.
+          By using Express Routing, I take advantage of code reuse and create a nice interface to work with.
         </p>
         <img src="./imgs/express_route1.png" width="45%" height="45%" class="img-fluid modal-img" alt="Express Route Snippet Part 1">
         <img src="./imgs/express_route2.png" width="45%" height="45%" class="img-fluid modal-img" alt="Express Route Snippet Part 2">
         <br/><br/>        
         <h5>Database Script</h5>
         <p>
-          This is an example of one of the database scripts I used for creating the <code>body_features</code> table. The script is re-runnable and won't 
+          This is an example of one of the database scripts I created for making the <code>body_features</code> table. The script is re-runnable and won't 
           break if the table already exists. When writing the script, I first wrote it in SQL to better visualize what I wanted. I left the SQL version of the script 
           as a comment, in case future developers have trouble reading the JavaScript. This script also uses <a href="http://knexjs.org/" target="_blank">Knex.js</a>.
         </p>
